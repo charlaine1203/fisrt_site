@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+  .galerie-flexible {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espacement entre les images */
+    padding: 20px;
+  }
+
+  .galerie-flexible img {
+    max-width: 300px; /* Largeur maximale de chaque image */
+    height: auto; /* Maintient le ratio d'aspect */
+    border: 3px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Animation au survol */
+  }
+
+  .galerie-flexible img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+</style>
+</head>
+<body>
+    
+<div class="galerie-flexible">
+  <img src="arbre_de_vie.jpg" alt="arbre_de_vie">
+  <img src="espace vert.jpg" alt="espace vert">
+  <img src="vue.jpg" alt="Bord de mer au coucher du soleil">
+  <img src="jolie.jpg" alt="temple">
+  <img src="temple.jpg" alt="chine">
+  <img src="pont .jpg" alt="pont">
+</div>
+</body>
+</html>
